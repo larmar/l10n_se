@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Tax template for sale and purchase -->
+        <record id="sale_tax_25_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms 25%</field>
+            <field name="amount">25</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="coa_2611"/>
+            <field name="refund_account_id" ref="coa_2611"/>
+        </record>
+
+       <record id="purchase_tax_25_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms 25%</field>
+            <field name="amount">25</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="coa_2641"/>
+            <field name="refund_account_id" ref="coa_2641"/>
+        </record>
+        
+        <record id="sale_tax_12_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms 12%</field>
+            <field name="amount">12</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="coa_2621"/>
+            <field name="refund_account_id" ref="coa_2621"/>
+        </record>
+
+       <record id="purchase_tax_12_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms 12%</field>
+            <field name="amount">12</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="coa_2641"/>
+            <field name="refund_account_id" ref="coa_2641"/>
+        </record>
+
+        <record id="sale_tax_6_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms 6%</field>
+            <field name="amount">6</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="coa_2631"/>
+            <field name="refund_account_id" ref="coa_2631"/>
+        </record>
+
+       <record id="purchase_tax_6_template" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms 6%</field>
+            <field name="amount">6</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="coa_2641"/>
+            <field name="refund_account_id" ref="coa_2641"/>
+        </record>
+
+    </data>
+</openerp>
