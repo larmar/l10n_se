@@ -12,7 +12,7 @@
         <record id="l10nse_chart_template" model="account.chart.template">
             <field name="name">Swedish Chart of Account Template</field>
             <field name="code_digits">4</field>
-            <field name="bank_account_code_prefix">192</field>
+            <field name="bank_account_code_prefix">193</field>
             <field name="cash_account_code_prefix">191</field>
             <field name="transfer_account_id" ref="transfer_account_id"/>
             <field name="currency_id" ref="base.SEK"/>
@@ -346,8 +346,8 @@
             <field name="user_type_id" ref="account.data_account_type_liquidity" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
-        <record id="coa_1930" model="account.account.template">
-            <field name="code">1930</field>
+        <record id="coa_193" model="account.account.template">
+            <field name="code">193</field>
             <field name="name">Företagskonto/checkkonto/affärskonto</field>
             <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_liquidity" />
@@ -848,25 +848,49 @@
         </record>
         <record id="coa_3001" model="account.account.template">
             <field name="code">3001</field>
-            <field name="name">Försäljning inom Sverige, 25 % moms</field>
+            <field name="name">Försäljning Varor inom Sverige, 25 % moms</field>
             <field name="user_type_id" ref="account.data_account_type_revenue" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_3002" model="account.account.template">
             <field name="code">3002</field>
-            <field name="name">Försäljning inom Sverige, 12 % moms</field>
+            <field name="name">Försäljning Varor inom Sverige, 12 % moms</field>
             <field name="user_type_id" ref="account.data_account_type_revenue" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_3003" model="account.account.template">
             <field name="code">3003</field>
-            <field name="name">Försäljning inom Sverige, 6 % moms</field>
+            <field name="name">Försäljning Varor inom Sverige, 6 % moms</field>
             <field name="user_type_id" ref="account.data_account_type_revenue" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_3004" model="account.account.template">
             <field name="code">3004</field>
-            <field name="name">Försäljning inom Sverige, momsfri</field>
+            <field name="name">Försäljning Varor inom Sverige, momsfri</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_3051" model="account.account.template">
+            <field name="code">3051</field>
+            <field name="name">Försäljning Tjänster inom Sverige, 25 % moms</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_3052" model="account.account.template">
+            <field name="code">3052</field>
+            <field name="name">Försäljning Tjänster inom Sverige, 12 % moms</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_3053" model="account.account.template">
+            <field name="code">3053</field>
+            <field name="name">Försäljning Tjänster inom Sverige, 6 % moms</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_3054" model="account.account.template">
+            <field name="code">3054</field>
+            <field name="name">Försäljning Tjänster inom Sverige, momsfri</field>
             <field name="user_type_id" ref="account.data_account_type_revenue" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>

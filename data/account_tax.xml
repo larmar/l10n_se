@@ -6,6 +6,7 @@
         <record id="sale_tax_25_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Utgående moms 25%</field>
+            <field name="description">ST25</field>
             <field name="amount">25</field>
             <field name="type_tax_use">sale</field>
             <field name="account_id" ref="coa_2611"/>
@@ -15,6 +16,7 @@
        <record id="purchase_tax_25_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Ingående moms 25%</field>
+            <field name="description">PT25</field>
             <field name="amount">25</field>
             <field name="type_tax_use">purchase</field>
             <field name="account_id" ref="coa_2641"/>
@@ -24,6 +26,7 @@
         <record id="sale_tax_12_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Utgående moms 12%</field>
+            <field name="description">ST12</field>
             <field name="amount">12</field>
             <field name="type_tax_use">sale</field>
             <field name="account_id" ref="coa_2621"/>
@@ -33,6 +36,7 @@
        <record id="purchase_tax_12_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Ingående moms 12%</field>
+            <field name="description">PT12</field>
             <field name="amount">12</field>
             <field name="type_tax_use">purchase</field>
             <field name="account_id" ref="coa_2641"/>
@@ -42,20 +46,53 @@
         <record id="sale_tax_6_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Utgående moms 6%</field>
+            <field name="description">ST6</field>
             <field name="amount">6</field>
             <field name="type_tax_use">sale</field>
             <field name="account_id" ref="coa_2631"/>
             <field name="refund_account_id" ref="coa_2631"/>
         </record>
 
-       <record id="purchase_tax_6_template" model="account.tax.template">
+        <record id="purchase_tax_6_template" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Ingående moms 6%</field>
+            <field name="description">PT6</field>
             <field name="amount">6</field>
             <field name="type_tax_use">purchase</field>
             <field name="account_id" ref="coa_2641"/>
             <field name="refund_account_id" ref="coa_2641"/>
         </record>
+
+        <record id="tax_25_EU_template_m" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående EU moms 25%</field>
+            <field name="description">PTE25M</field>
+            <field name="amount">25</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2631"/>
+            <field name="refund_account_id" ref="coa_2631"/>
+        </record>
+
+        <record id="tax_25_EU_template_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående EU R moms 25%</field>
+            <field name="description">PTE25R</field>
+            <field name="amount">-25</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2641"/>
+            <field name="refund_account_id" ref="coa_2641"/>
+        </record>
+ 
+        <record id="tax_25_EU_template_g" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Inköp av varor EU moms 25%</field>
+            <field name="description">PTE25</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_25_EU_template_m'), ref('tax_25_EU_template_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
 
     </data>
 </openerp>
