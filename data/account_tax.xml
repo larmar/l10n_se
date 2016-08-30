@@ -62,37 +62,70 @@
             <field name="account_id" ref="coa_2641"/>
             <field name="refund_account_id" ref="coa_2641"/>
         </record>
+        
+        <!-- Tax template VAT in EC -->
 
-        <record id="tax_25_EU_template_m" model="account.tax.template">
+        <record id="tax_25_EC_fictive" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
-            <field name="name">Utgående EU moms 25%</field>
-            <field name="description">PTE25M</field>
+            <field name="name">Ingående moms utland fiktiv 25%</field>
+            <field name="description">PE25F</field>
             <field name="amount">25</field>
             <field name="type_tax_use">none</field>
-            <field name="account_id" ref="coa_2631"/>
-            <field name="refund_account_id" ref="coa_2631"/>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
         </record>
 
-        <record id="tax_25_EU_template_reverse" model="account.tax.template">
+        <record id="tax_25_EC_reverse" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
-            <field name="name">Ingående EU R moms 25%</field>
-            <field name="description">PTE25R</field>
+            <field name="name">Utgående moms omvänd skattskyldighet 25%</field>
+            <field name="description">PE25R</field>
             <field name="amount">-25</field>
             <field name="type_tax_use">none</field>
-            <field name="account_id" ref="coa_2641"/>
-            <field name="refund_account_id" ref="coa_2641"/>
+            <field name="account_id" ref="coa_2614"/>
+            <field name="refund_account_id" ref="coa_2614"/>
         </record>
- 
-        <record id="tax_25_EU_template_g" model="account.tax.template">
+
+        <record id="purchase_tax_25_EC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Inköp av varor EU moms 25%</field>
-            <field name="description">PTE25</field>
+            <field name="description">PE25</field>
             <field name="amount" eval="100.00"/>
             <field name="amount_type">group</field>
-            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_25_EU_template_m'), ref('tax_25_EU_template_reverse')])]"/>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_25_EC_fictive'), ref('tax_25_EC_reverse')])]"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
+        <!-- Tax template VAT Export -->
+
+        <record id="tax_25_NEC_fictive" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms import varor fiktiv 25%</field>
+            <field name="description">PN25F</field>
+            <field name="amount">25</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
+        </record>
+
+        <record id="tax_25_NEC_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms import varor 25%</field>
+            <field name="description">PN25R</field>
+            <field name="amount">-25</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2615"/>
+            <field name="refund_account_id" ref="coa_2615"/>
+        </record>
+ 
+        <record id="purchase_tax_25_NEC" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Beskattningsunderlag vid import 25%</field>
+            <field name="description">PN25</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_25_NEC_fictive'), ref('tax_25_NEC_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
 
     </data>
 </openerp>
