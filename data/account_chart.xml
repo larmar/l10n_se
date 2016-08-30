@@ -1177,21 +1177,15 @@
             <field name="user_type_id" ref="account.data_account_type_direct_costs" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
-        <record id="coa_4690" model="account.account.template">
-            <field name="code">4690</field>
-            <field name="name">Övriga Legoarbeten och underentreprenader</field>
+        <record id="coa_46" model="account.account.template">
+            <field name="code">46</field>
+            <field name="name">Legoarbeten och underentreprenader</field>
             <field name="user_type_id" ref="account.data_account_type_direct_costs" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_4790" model="account.account.template">
             <field name="code">4790</field>
             <field name="name">Reduktion av inköpspriser</field>
-            <field name="user_type_id" ref="account.data_account_type_direct_costs" />
-            <field name="chart_template_id" ref="l10nse_chart_template"/>
-        </record>
-        <record id="coa_4803" model="account.account.template">
-            <field name="code">4803</field>
-            <field name="name">Kost av sålda tjänster </field>
             <field name="user_type_id" ref="account.data_account_type_direct_costs" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
