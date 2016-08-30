@@ -18,6 +18,7 @@ Install some swedish chart of accounts.
     'data': [
         'data/account_chart.xml',
         'data/account_tax.xml',
+        'data/account_fiscal.xml',
         'account_chart_template.yml',
     ],
     'test': [
