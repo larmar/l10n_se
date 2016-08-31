@@ -370,7 +370,7 @@
             <field name="refund_account_id" ref="coa_2615"/>
         </record>
  
-        <record id="purchase_tax_goods_25_NEC" model="account.tax.template">
+        <record id="purchase_goods_tax_25_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Beskattningsunderlag vid import 25%</field>
             <field name="description">PN25</field>
@@ -400,7 +400,7 @@
             <field name="refund_account_id" ref="coa_2625"/>
         </record>
  
-        <record id="purchase_tax_goods_12_NEC" model="account.tax.template">
+        <record id="purchase_goods_tax_12_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Beskattningsunderlag vid import 12%</field>
             <field name="description">PN12</field>
@@ -420,7 +420,7 @@
             <field name="refund_account_id" ref="coa_2645"/>
         </record>
 
-        <record id="tax_goods_25_NEC_reverse" model="account.tax.template">
+        <record id="tax_goods_6_NEC_reverse" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Utgående moms import varor 6%</field>
             <field name="description">PN6R</field>
@@ -430,7 +430,7 @@
             <field name="refund_account_id" ref="coa_2635"/>
         </record>
  
-        <record id="purchase_tax_goods_6_NEC" model="account.tax.template">
+        <record id="purchase_goods_tax_6_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Beskattningsunderlag vid import 6%</field>
             <field name="description">PN6</field>
@@ -460,7 +460,7 @@
             <field name="refund_account_id" ref="coa_2614"/>
         </record>
  
-        <record id="purchase_tax_services_25_NEC" model="account.tax.template">
+        <record id="purchase_services_tax_25_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Inköp av tjänster utanför EU 25%</field>
             <field name="description">PN25</field>
@@ -490,7 +490,7 @@
             <field name="refund_account_id" ref="coa_2624"/>
         </record>
  
-        <record id="purchase_tax_services_12_NEC" model="account.tax.template">
+        <record id="purchase_services_tax_12_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Inköp av tjänster utanför EU 12%</field>
             <field name="description">PN12</field>
@@ -520,7 +520,7 @@
             <field name="refund_account_id" ref="coa_2634"/>
         </record>
  
-        <record id="purchase_tax_services_6_NEC" model="account.tax.template">
+        <record id="purchase_services_tax_6_NEC" model="account.tax.template">
             <field name="chart_template_id" ref="l10nse_chart_template"/>
             <field name="name">Inköp av tjänster utanför EU 6%</field>
             <field name="description">PN6</field>
