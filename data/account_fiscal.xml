@@ -81,6 +81,30 @@
             <field name="tax_dest_id" ref="purchase_goods_tax_25_EC"/>
         </record>
 
+        <record id="fpp_euro_12_services" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_euro"/>
+            <field name="tax_src_id" ref="purchase_tax_12_services"/>
+            <field name="tax_dest_id" ref="purchase_services_tax_12_EC"/>
+        </record>
+
+        <record id="fpp_euro_12_goods" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_euro"/>
+            <field name="tax_src_id" ref="purchase_tax_12_goods"/>
+            <field name="tax_dest_id" ref="purchase_goods_tax_12_EC"/>
+        </record>
+
+        <record id="fpp_euro_6_services" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_euro"/>
+            <field name="tax_src_id" ref="purchase_tax_6_services"/>
+            <field name="tax_dest_id" ref="purchase_services_tax_6_EC"/>
+        </record>
+
+        <record id="fpp_euro_6_goods" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_euro"/>
+            <field name="tax_src_id" ref="purchase_tax_6_goods"/>
+            <field name="tax_dest_id" ref="purchase_goods_tax_6_EC"/>
+        </record>
+
         <!-- Fiscal Position VAT on sales eurozone -->
 
         <record id="fps_euro_25_services" model="account.fiscal.position.tax.template">

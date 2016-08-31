@@ -180,6 +180,66 @@
             <field name="type_tax_use">purchase</field>
         </record>
 
+        <record id="tax_goods_12_EC_fictive" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms utland fiktiv 12%</field>
+            <field name="description">PE12F</field>
+            <field name="amount">12</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
+        </record>
+
+        <record id="tax_goods_12_EC_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms omvänd skattskyldighet 12%</field>
+            <field name="description">PE12R</field>
+            <field name="amount">-12</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2624"/>
+            <field name="refund_account_id" ref="coa_2624"/>
+        </record>
+
+        <record id="purchase_goods_tax_12_EC" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Inköp av varor EU moms 12%</field>
+            <field name="description">PE12</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_goods_12_EC_fictive'), ref('tax_goods_12_EC_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
+        <record id="tax_goods_6_EC_fictive" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms utland fiktiv 6%</field>
+            <field name="description">PE6F</field>
+            <field name="amount">6</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
+        </record>
+
+        <record id="tax_goods_6_EC_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms omvänd skattskyldighet 6%</field>
+            <field name="description">PE6R</field>
+            <field name="amount">-6</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2634"/>
+            <field name="refund_account_id" ref="coa_2634"/>
+        </record>
+
+        <record id="purchase_goods_tax_6_EC" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Inköp av varor EU moms 6%</field>
+            <field name="description">PE6</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_goods_6_EC_fictive'), ref('tax_goods_6_EC_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
         <!-- Tax template VAT in EC services -->
 
         <record id="tax_services_25_EC_fictive" model="account.tax.template">
@@ -209,6 +269,66 @@
             <field name="amount" eval="100.00"/>
             <field name="amount_type">group</field>
             <field name="children_tax_ids" eval="[(6, 0, [ref('tax_services_25_EC_fictive'), ref('tax_services_25_EC_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
+        <record id="tax_services_12_EC_fictive" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms tjänst EU fiktiv 12%</field>
+            <field name="description">PE12F</field>
+            <field name="amount">12</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
+        </record>
+
+        <record id="tax_services_12_EC_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms tjänst omvänd skattskyldighet 12%</field>
+            <field name="description">PE12R</field>
+            <field name="amount">-12</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2624"/>
+            <field name="refund_account_id" ref="coa_2624"/>
+        </record>
+
+        <record id="purchase_services_tax_12_EC" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Inköp av tjänst EU moms 12%</field>
+            <field name="description">PE12</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_services_12_EC_fictive'), ref('tax_services_12_EC_reverse')])]"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
+        <record id="tax_services_6_EC_fictive" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Ingående moms tjänst EU fiktiv 6%</field>
+            <field name="description">PE6F</field>
+            <field name="amount">6</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2645"/>
+            <field name="refund_account_id" ref="coa_2645"/>
+        </record>
+
+        <record id="tax_services_6_EC_reverse" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Utgående moms tjänst omvänd skattskyldighet 6%</field>
+            <field name="description">PE6R</field>
+            <field name="amount">-6</field>
+            <field name="type_tax_use">none</field>
+            <field name="account_id" ref="coa_2634"/>
+            <field name="refund_account_id" ref="coa_2634"/>
+        </record>
+
+        <record id="purchase_services_tax_6_EC" model="account.tax.template">
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="name">Inköp av tjänst EU moms 6%</field>
+            <field name="description">PE6</field>
+            <field name="amount" eval="100.00"/>
+            <field name="amount_type">group</field>
+            <field name="children_tax_ids" eval="[(6, 0, [ref('tax_services_6_EC_fictive'), ref('tax_services_6_EC_reverse')])]"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
