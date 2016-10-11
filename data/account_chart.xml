@@ -57,7 +57,7 @@
         <record id="coa_1119" model="account.account.template">
             <field name="code">1119</field>
             <field name="name">Ackumulerade avskrivningar på byggnader</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1158" model="account.account.template">
@@ -69,7 +69,7 @@
         <record id="coa_1159" model="account.account.template">
             <field name="code">1159</field>
             <field name="name">Ackumulerade avskrivningar på markanläggningar</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1211" model="account.account.template">
@@ -81,7 +81,7 @@
         <record id="coa_1219" model="account.account.template">
             <field name="code">1219</field>
             <field name="name">Ackumulerade avskrivningar på maskiner och andra tekniska anläggningar</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1221" model="account.account.template">
@@ -93,7 +93,7 @@
         <record id="coa_1229" model="account.account.template">
             <field name="code">1229</field>
             <field name="name">Ackumulerade avskrivningar på inventarier och verktyg</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1241" model="account.account.template">
@@ -105,7 +105,7 @@
         <record id="coa_1249" model="account.account.template">
             <field name="code">1249</field>
             <field name="name">Ackumulerade avskrivningar på bilar och andra transportmedel</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1251" model="account.account.template">
@@ -117,7 +117,7 @@
         <record id="coa_1259" model="account.account.template">
             <field name="code">1259</field>
             <field name="name">Ackumulerade avskrivningar på datorer</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1291" model="account.account.template">
@@ -129,7 +129,7 @@
         <record id="coa_1299" model="account.account.template">
             <field name="code">1299</field>
             <field name="name">Ackumulerade avskrivningar på övriga materiella anläggningstillgångar</field>
-            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1351" model="account.account.template">
@@ -1743,38 +1743,56 @@
         </record>
         <record id="coa_7811" model="account.account.template">
             <field name="code">7811</field>
-            <field name="name">Avskrivningar på balanserade utgifter </field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="name">Avskrivningar på balanserade utgifter</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_7821" model="account.account.template">
             <field name="code">7821</field>
-            <field name="name">Avskrivningar på byggnader </field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="name">Avskrivningar på byggnader</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_7831" model="account.account.template">
             <field name="code">7831</field>
             <field name="name">Avskrivningar på maskiner och andra tekniska anläggningar </field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_7832" model="account.account.template">
+            <field name="code">7832</field>
+            <field name="name">Avskrivningar på Inventarier och verktyg</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_7833" model="account.account.template">
+            <field name="code">7833</field>
+            <field name="name">Avskrivningar på installationer</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_7834" model="account.account.template">
             <field name="code">7834</field>
-            <field name="name">Avskrivningar på office furniture, fixture etc</field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="name">Avskrivningar på bilar och andra transportmedel</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
-        <record id="coa_7841" model="account.account.template">
-            <field name="code">7841</field>
-            <field name="name">Avskrivningar på Inventarier och verktyg</field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+        <record id="coa_7835" model="account.account.template">
+            <field name="code">7835</field>
+            <field name="name">Avskrivningar på datorer, företaget</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
-        <record id="coa_7851" model="account.account.template">
-            <field name="code">7851</field>
-            <field name="name">Avskrivningar på datorer, företaget </field>
-            <field name="user_type_id" ref="account.data_account_type_expenses" />
+        <record id="coa_7836" model="account.account.template">
+            <field name="code">7836</field>
+            <field name="name">Avskrivningar på leasade tillgångar</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_7839" model="account.account.template">
+            <field name="code">7839</field>
+            <field name="name">Avskrivningar på övriga maskiner och inventarier</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_7971" model="account.account.template">
