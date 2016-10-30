@@ -24,9 +24,9 @@
 
         <!-- Account Templates-->
 
-        <record id="coa_1038" model="account.account.template">
-            <field name="code">1038</field>
-            <field name="name">Ackumulerade nedskrivningar på patent</field>
+        <record id="coa_1030" model="account.account.template">
+            <field name="code">1030</field>
+            <field name="name">Patent</field>
             <field name="user_type_id" ref="account.data_account_type_non_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
@@ -36,9 +36,9 @@
             <field name="user_type_id" ref="account.data_account_type_non_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
-        <record id="coa_1068" model="account.account.template">
-            <field name="code">1068</field>
-            <field name="name">Ackumulerade nedskrivningar på hyresrätter, tomträtter och liknande</field>
+        <record id="coa_1060" model="account.account.template">
+            <field name="code">1060</field>
+            <field name="name">Hyresrätter, tomträtter och liknande</field>
             <field name="user_type_id" ref="account.data_account_type_non_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
