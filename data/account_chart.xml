@@ -1979,6 +1979,12 @@
             <field name="user_type_id" ref="account.data_account_type_depreciation" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
+        <record id="coa_7960" model="account.account.template">
+            <field name="code">7960</field>
+            <field name="name">Valutakursförluster på fordringar och skulder av rörelsekaraktär</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
         <record id="coa_7970" model="account.account.template">
             <field name="code">7970</field>
             <field name="name">Förlust vid avyttring av immateriella och materiella anläggningstillgångar</field>
@@ -1994,7 +2000,7 @@
         <record id="coa_8210" model="account.account.template">
             <field name="code">8210</field>
             <field name="name">Utdelningar på andelar i andra företag</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8220" model="account.account.template">
@@ -2006,49 +2012,49 @@
         <record id="coa_8250" model="account.account.template">
             <field name="code">8250</field>
             <field name="name">Ränteintäkter från långfristiga fordringar hos och värdepapper i andra företag</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8270" model="account.account.template">
             <field name="code">8270</field>
             <field name="name">Nedskrivningar av innehav av andelar i och långfristiga fordringar hos andra företag</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8311" model="account.account.template">
             <field name="code">8311</field>
             <field name="name">Ränteintäkter från bank</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8314" model="account.account.template">
             <field name="code">8314</field>
             <field name="name">Skattefria ränteintäkter</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8331" model="account.account.template">
             <field name="code">8331</field>
             <field name="name">Valutakursvinster på kortfristiga fordringar och placeringar</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8340" model="account.account.template">
             <field name="code">8340</field>
             <field name="name">Utdelningar på kortfristiga placeringar</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8350" model="account.account.template">
             <field name="code">8350</field>
             <field name="name">Resultat vid försäljning av kortfristiga placeringar</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8390" model="account.account.template">
             <field name="code">8390</field>
             <field name="name">Övriga finansiella intäkter</field>
-            <field name="user_type_id" ref="account.data_account_type_other_income" />
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_8411" model="account.account.template">
