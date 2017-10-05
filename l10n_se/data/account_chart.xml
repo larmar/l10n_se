@@ -829,6 +829,7 @@
         <record id="coa_2821" model="account.account.template">
             <field name="code">2821</field>
             <field name="name">Löneskulder</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_payable" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
