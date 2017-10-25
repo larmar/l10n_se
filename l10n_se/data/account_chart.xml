@@ -1164,6 +1164,24 @@
             <field name="user_type_id" ref="account.data_account_type_direct_costs" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
+        <record id="coa_4416" model="account.account.template">
+            <field name="code">4416</field>
+            <field name="name">Inköpta varor i Sverige, omvänd skattskyldighet, 12 % moms</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>        
+        <record id="coa_4417" model="account.account.template">
+            <field name="code">4417</field>
+            <field name="name">Inköpta varor i Sverige, omvänd skattskyldighet, 6 % moms</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
+        <record id="coa_4425" model="account.account.template">
+            <field name="code">4425</field>
+            <field name="name">Inköpta tjänster i Sverige, omvänd skattskyldighet, 25 %</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs" />
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+        </record>
         <record id="coa_4426" model="account.account.template">
             <field name="code">4426</field>
             <field name="name">Inköpta tjänster i Sverige, omvänd skattskyldighet, 12 %</field>
