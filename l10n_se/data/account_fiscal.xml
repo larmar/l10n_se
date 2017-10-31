@@ -225,49 +225,49 @@
         
         <!-- Fiscal Position Accounts Sales Eurozone -->
 
-        <record id="fps_euro_25_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_25_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3051"/>
             <field name="account_dest_id" ref="coa_3308"/>
         </record>
 
-        <record id="fps_euro_12_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_12_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3052"/>
             <field name="account_dest_id" ref="coa_3308"/>
         </record>
 
-        <record id="fps_euro_6_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_6_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3053"/>
             <field name="account_dest_id" ref="coa_3308"/>
         </record>
 
-        <record id="fps_euro_0_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_0_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3054"/>
             <field name="account_dest_id" ref="coa_3308"/>
         </record>
 
-            <record id="fps_euro_25_goods_acct" model="account.fiscal.position.account.template">
+            <record id="fps_euro_25_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3001"/>
             <field name="account_dest_id" ref="coa_3106"/>
         </record>
 
-        <record id="fps_euro_12_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_12_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3002"/>
             <field name="account_dest_id" ref="coa_3106"/>
         </record>
 
-        <record id="fps_euro_6_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_6_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3003"/>
             <field name="account_dest_id" ref="coa_3106"/>
         </record>
 
-        <record id="fps_euro_0_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_euro_0_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_3004"/>
             <field name="account_dest_id" ref="coa_3106"/>
@@ -275,37 +275,37 @@
 
         <!-- Fiscal Position Accounts on Purchase eurozone -->
 
-        <record id="fpp_euro_25_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_25_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4425"/>
             <field name="account_dest_id" ref="coa_4535"/>
         </record>
 
-        <record id="fpp_euro_25_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_25_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4415"/>
             <field name="account_dest_id" ref="coa_4515"/>
         </record>
 
-        <record id="fpp_euro_12_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_12_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4426"/>
             <field name="account_dest_id" ref="coa_4516"/>
         </record>
 
-        <record id="fpp_euro_12_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_12_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4416"/>
             <field name="account_dest_id" ref="coa_4516"/>
         </record>
 
-        <record id="fpp_euro_6_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_6_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4427"/>
             <field name="account_dest_id" ref="coa_4517"/>
         </record>
 
-        <record id="fpp_euro_6_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_euro_6_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_euro"/>
             <field name="account_src_id" ref="coa_4417"/>
             <field name="account_dest_id" ref="coa_4517"/>
@@ -313,7 +313,7 @@
 
         <!-- Fiscal Position Accounts Purchase None Eurozone -->
 
-        <record id="fpp_none_euro_25_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_25_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_4425"/>
             <field name="account_dest_id" ref="coa_4531"/>
@@ -325,25 +325,25 @@
             <field name="account_dest_id" ref="coa_4545"/>
         </record>
 
-        <record id="fpp_none_euro_12_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_12_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_4426"/>
             <field name="account_dest_id" ref="coa_4532"/>
         </record>
 
-        <record id="fpp_none_euro_12_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_12_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro_acct"/>
             <field name="account_src_id" ref="coa_4416"/>
             <field name="account_dest_id" ref="coa_4546"/>
         </record>
 
-        <record id="fpp_none_euro_6_services_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_6_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_4427"/>
             <field name="account_dest_id" ref="coa_4533"/>
         </record>
 
-        <record id="fpp_none_euro_6_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_6_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_4417"/>
             <field name="account_dest_id" ref="coa_4547"/>
@@ -351,49 +351,49 @@
 
         <!-- Fiscal Position Accounts on sales eurozone -->
 
-        <record id="fps_none_euro_25_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_25_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3051"/>
             <field name="account_dest_id" ref="coa_3305"/>
         </record>
 
-        <record id="fps_none_euro_25_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_25_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3001"/>
             <field name="account_dest_id" ref="coa_3105"/>
         </record>
 
-        <record id="fps_none_euro_12_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_12_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3052"/>
             <field name="account_dest_id" ref="coa_3305"/>
         </record>
 
-        <record id="fps_none_euro_12_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_12_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref=coa_3002"/>
             <field name="account_dest_id" ref="coa_3105"/>
         </record>
 
-        <record id="fps_none_euro_6_services_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_6_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3053"/>
             <field name="account_dest_id" ref="coa_3305"/>
         </record>
 
-        <record id="fps_none_euro_6_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fps_none_euro_6_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3003"/>
             <field name="account_dest_id" ref="coa_3105"/>
          </record>
 
-         <record id="fps_none_euro_0_services_acct" model="account.fiscal.position.account.template">
+         <record id="fps_none_euro_0_services_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3054"/>
             <field name="account_dest_id" ref="coa_3305"/>
           </record>
 
-         <record id="fps_none_euro_0_goods_acct" model="account.fiscal.position.account.template">
+         <record id="fps_none_euro_0_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_3004"/>
             <field name="account_dest_id" ref="coa_3305"/>
