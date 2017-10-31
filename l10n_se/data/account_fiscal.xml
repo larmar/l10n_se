@@ -223,7 +223,7 @@
         <!-- Fiscal Position Account Templates -->
         <!-- ************************************************************* -->
         
-        <!-- Fiscal Position Sales Eurozone -->
+        <!-- Fiscal Position Accounts Sales Eurozone -->
 
         <record id="fps_euro_25_services_acct" model="account.fiscal.position.account.template">
             <field name="position_id" ref="fp_euro"/>
@@ -273,7 +273,7 @@
             <field name="account_dest_id" ref="coa_3106"/>
         </record>
 
-        <!-- Fiscal Position VAT on Purchase eurozone -->
+        <!-- Fiscal Position Accounts on Purchase eurozone -->
 
         <record id="fpp_euro_25_services_acct" model="account.fiscal.position.account.template">
             <field name="position_id" ref="fp_euro"/>
@@ -311,7 +311,7 @@
             <field name="account_dest_id" ref="coa_4517"/>
         </record>
 
-        <!-- Fiscal Position Purchase None Eurozone -->
+        <!-- Fiscal Position Accounts Purchase None Eurozone -->
 
         <record id="fpp_none_euro_25_services_acct" model="account.fiscal.position.account.template">
             <field name="position_id" ref="fp_none_euro"/>
@@ -349,7 +349,7 @@
             <field name="account_dest_id" ref="coa_4547"/>
         </record>
 
-        <!-- Fiscal Position VAT on sales eurozone -->
+        <!-- Fiscal Position Accounts on sales eurozone -->
 
         <record id="fps_none_euro_25_services_acct" model="account.fiscal.position.account.template">
             <field name="position_id" ref="fp_none_euro"/>
