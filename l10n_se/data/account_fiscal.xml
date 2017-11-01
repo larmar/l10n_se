@@ -319,7 +319,7 @@
             <field name="account_dest_id" ref="coa_4531"/>
         </record>
 
-        <record id="fpp_none_euro_25_goods_acct" model="account.fiscal.position.account.template">
+        <record id="fpp_none_euro_25_goods_acct" model="account.fiscal.position.account">
             <field name="position_id" ref="fp_none_euro"/>
             <field name="account_src_id" ref="coa_4415"/>
             <field name="account_dest_id" ref="coa_4545"/>
