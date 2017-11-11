@@ -274,24 +274,28 @@
         <record id="coa_1630" model="account.account.template">
             <field name="code">1630</field>
             <field name="name">Avräkning för skatter och avgifter (skattekonto)</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1640" model="account.account.template">
             <field name="code">1640</field>
             <field name="name">Skattefordringar</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1650" model="account.account.template">
             <field name="code">1650</field>
             <field name="name">Momsfordran</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_1680" model="account.account.template">
             <field name="code">1680</field>
             <field name="name">Andra kortfristiga fordringar</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_assets" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
@@ -587,18 +591,21 @@
         <record id="coa_2411" model="account.account.template">
             <field name="code">2411</field>
             <field name="name">Kortfristiga lån från kreditinstitut</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_2421" model="account.account.template">
             <field name="code">2421</field>
             <field name="name">Ej inlösta presentkort</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
         <record id="coa_2429" model="account.account.template">
             <field name="code">2429</field>
             <field name="name">Övriga förskott från kunder</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
@@ -619,6 +626,7 @@
         <record id="coa_2490" model="account.account.template">
             <field name="code">2490</field>
             <field name="name">Övriga kortfristiga skulder till kreditinstitut, kunder och leverantörer</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
@@ -861,6 +869,7 @@
         <record id="coa_2911" model="account.account.template">
             <field name="code">2911</field>
             <field name="name">Löneskulder</field>
+            <field eval="True" name="reconcile" />
             <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
             <field name="chart_template_id" ref="l10nse_chart_template"/>
         </record>
